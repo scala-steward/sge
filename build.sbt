@@ -18,7 +18,7 @@ val versions = new {
   // Dependencies
   val gears            = "0.3.1"
   val kindlings        = "0.1.2"
-  val lls              = "0.1.0"
+  val lls              = "0.2.0"
   val scribe           = "3.19.0"
   val scalajsDom       = "2.8.1"
   val scalaSaxParser   = "0.1.0"
