@@ -32,7 +32,7 @@ val versions = new {
   val munitScalacheck = "1.3.0"
 
   // Native component providers (from sge-native-providers repo)
-  val multiarch        = "0.2.0"
+  val multiarch        = "0.3.0"
   val nativeComponents = "0.1.2"
   val curlProvider     = multiarch
 }
@@ -295,7 +295,7 @@ val `sge-jvm-platform-api` = (projectMatrix in file("sge-jvm-platform/api"))
   .settings(mimaSettings)
   .settings(
     scalacOptions ++= Seq("-release", "17"),
-    libraryDependencies += "com.kubuszok" %% "multiarch-panama-api" % "0.2.0"
+    libraryDependencies += "com.kubuszok" %% "multiarch-panama-api" % "0.3.0"
   )
 
 // SGE convention: downloaded Android SDK lives under sge-deps/
@@ -694,7 +694,7 @@ val `sge-it-jvm-platform` = (projectMatrix in file("sge-test/it-jvm-platform"))
   .settings(noPublishSettings)
   .settings(mimaSettings)
   .settings(
-    libraryDependencies += "com.kubuszok" %% "multiarch-panama-jdk" % "0.2.0"
+    libraryDependencies += "com.kubuszok" %% "multiarch-panama-jdk" % "0.3.0"
   )
   .dependsOn(`sge-jvm-platform-api`, `sge-jvm-platform-android`)
 
