@@ -943,7 +943,7 @@ val `sge-android-robolectric` = (projectMatrix in file("sge-test/android-robolec
       ("androidx.test"    % "monitor" % "1.7.2" % Aar)
         .intransitive()
         .artifacts(Artifact("monitor", "aar", "aar")),
-      ("androidx.tracing" % "tracing" % "1.1.0" % Aar)
+      ("androidx.tracing" % "tracing" % "1.3.0" % Aar)
         .intransitive()
         .artifacts(Artifact("tracing", "aar", "aar"))
     ),
